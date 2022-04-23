@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'dart:convert';
 
+import 'package:chat_messanger_ui/controller/apiconstant.dart';
 import 'package:chat_messanger_ui/controller/con_messange.dart';
 import 'package:chat_messanger_ui/model/model_mess.dart';
 import 'package:chat_messanger_ui/theme/colors.dart';
@@ -28,7 +29,7 @@ class _ChatDetailPageState extends State<ChatDetailPage> {
 
     // API URL
     var url =
-        Uri.parse('http://doan2cuakhoa.000webhostapp.com/submit_data.php');
+        Uri.parse(ApiConstant().baseUrl+ApiConstant().writeData);
 
     // Store all data with Param Name.
     var data = {
